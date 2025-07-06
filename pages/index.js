@@ -8,7 +8,6 @@ import Video from "../components/video";
 import Benefits from "../components/benefits";
 import Footer from "../components/footer";
 import Testimonials from "../components/testimonials";
-import Cta from "../components/cta";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
 
@@ -28,10 +27,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Nextly - Free Nextjs & TailwindCSS Landing Page Template</title>
+        <title>Tekly Studio - Creative Digital Solutions</title>
         <meta
           name="description"
-          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
+          content="Tekly Studio builds innovative digital experiences, scalable IT operations, and cutting-edge AI solutions for businesses."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -39,12 +38,10 @@ export default function Home() {
       <Navbar />
       <Hero />
       <SectionTitle
-        pretitle="Nextly Benefits"
-        title=" Why should you use this landing page">
-        Nextly is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
-      </SectionTitle>
+      pretitle="Tekly Studio Benefits"
+      title="Why Choose Tekly Studio">
+      Tekly Studio delivers tailored digital solutions, robust DevOps, and cutting-edge AI systems to help your business scale, innovate, and succeed.
+    </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
       <SectionTitle
@@ -67,7 +64,6 @@ export default function Home() {
         conversion rate as well as support or chat requests.
       </SectionTitle>
       <Faq />
-      <Cta />
       <Footer />
       <PopupWidget />
     </>

@@ -3,7 +3,14 @@ import ThemeChanger from "./DarkSwitch";
 import { Disclosure } from "@headlessui/react";
 
 export default function Navbar() {
-  const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
+  const navigation = [
+    { name: "Home", href: "#hero" },
+    { name: "Services", href: "#services" },
+    { name: "About", href: "#about" },
+    { name: "Portfolio", href: "#portfolio" },
+    { name: "Testimonials", href: "#testimonials" },
+    { name: "Contact", href: "#contact" }
+  ];
 
   return (
     <div className="w-full">
@@ -54,9 +61,9 @@ export default function Navbar() {
                 <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
                   <>
                     {navigation.map((item, index) => (
-                      <Link key={index} href="/">
+                      <Link key={index} href={item.href}>
                         <a className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">
-                          {item}
+                          {item.name}
                         </a>
                       </Link>
                     ))}
@@ -75,11 +82,11 @@ export default function Navbar() {
         {/* menu  */}
         <div className="hidden text-center lg:flex lg:items-center">
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
-            {navigation.map((menu, index) => (
+            {navigation.map((item, index) => (
               <li className="mr-3 nav__item" key={index}>
-                <Link href="/">
+                <Link href={item.href}>
                   <a className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none">
-                    {menu}
+                    {item.name}
                   </a>
                 </Link>
               </li>

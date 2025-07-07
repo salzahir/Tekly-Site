@@ -4,7 +4,7 @@ import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
 
 import { benefitOne, benefitTwo } from "../components/data";
-import Video from "../components/video";
+import Portfolio from "../components/portfolio";
 import Benefits from "../components/benefits";
 import Footer from "../components/footer";
 import Testimonials from "../components/testimonials";
@@ -32,26 +32,24 @@ export default function Home() {
           name="description"
           content="Tekly Studio builds innovative digital experiences, scalable IT operations, and cutting-edge AI solutions for businesses."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/img/logo.jpg" />
       </Head>
 
       <Navbar />
       <Hero />
       <SectionTitle
-      pretitle="Tekly Studio Benefits"
-      title="Why Choose Tekly Studio">
-      Tekly Studio delivers tailored digital solutions, robust DevOps, and cutting-edge AI systems to help your business scale, innovate, and succeed.
-    </SectionTitle>
+        pretitle="Tekly Studio Benefits"
+        title="Why Choose Tekly Studio">
+        Tekly Studio delivers tailored digital solutions, robust DevOps, and cutting-edge AI systems to help your business scale, innovate, and succeed.
+      </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
       <SectionTitle
-        pretitle="Watch a video"
-        title="Learn how to fullfil your needs">
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don't forget to add one. Just like this.
+        pretitle="Explore Our Work"
+        title="Discover Our Creative Projects">
+        This section showcases the innovative solutions we've delivered for our clients. Each project is crafted with precision and purpose to drive results and elevate digital experiences.
       </SectionTitle>
-      <Video />
+      <Portfolio />
       <SectionTitle
         pretitle="Testimonials"
         title="Here's what our customers said">

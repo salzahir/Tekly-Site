@@ -8,49 +8,51 @@ import userThreeImg from "../public/img/user3.jpg";
 
 export default function Testimonials() {
   return (
-    <Container>
-      <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
-        <div className="lg:col-span-2 xl:col-auto">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              Tekly Studio transformed our digital presence and helped us grow fast.
-            </p>
+    <section id="testimonials">
+      <Container>
+        <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
+          <div className="lg:col-span-2 xl:col-auto">
+            <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
+              <p className="text-2xl leading-normal ">
+                Tekly Studio transformed our digital presence and helped us grow fast.
+              </p>
 
-            <Avatar
-              image={userOneImg}
-              name="Sarah Steiner"
-              title="VP Sales at Google"
-            />
+              <Avatar
+                image={userOneImg}
+                name="Sarah Steiner"
+                title="VP Sales at Google"
+              />
+            </div>
+          </div>
+          <div className="">
+            <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
+              <p className="text-2xl leading-normal ">
+                The team was responsive, innovative, and exceeded our expectations.
+              </p>
+
+              <Avatar
+                image={userTwoImg}
+                name="Dylan Ambrose"
+                title="Lead marketer at Netflix"
+              />
+            </div>
+          </div>
+          <div className="">
+            <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
+              <p className="text-2xl leading-normal ">
+                Their design and development work was top-notch. Highly recommend.
+              </p>
+
+              <Avatar
+                image={userThreeImg}
+                name="Gabrielle Winn"
+                title="Co-founder of Acme Inc"
+              />
+            </div>
           </div>
         </div>
-        <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              The team was responsive, innovative, and exceeded our expectations.
-            </p>
-
-            <Avatar
-              image={userTwoImg}
-              name="Dylan Ambrose"
-              title="Lead marketer at Netflix"
-            />
-          </div>
-        </div>
-        <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              Their design and development work was top-notch. Highly recommend.
-            </p>
-
-            <Avatar
-              image={userThreeImg}
-              name="Gabrielle Winn"
-              title="Co-founder of Acme Inc"
-            />
-          </div>
-        </div>
-      </div>
-    </Container>
+      </Container>
+    </section>
   );
 }
 

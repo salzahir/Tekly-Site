@@ -35,21 +35,27 @@ export default function Faq() {
 
 const faqdata = [
   {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
+    question: "What services does Tekly Studio offer?",
+    answer: "Tekly Studio offers DevOps Operations, Custom Software Development, Mobile App Development, and cutting-edge AI solutions, including Agentic AI systems and NLP tools.",
   },
   {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
+    question: "Is Tekly Studio focused on backend or frontend development?",
+    answer: "Tekly Studio specializes in both backend and frontend development, delivering scalable, secure, and high-performance applications across web and mobile platforms.",
   },
   {
-    question: "What is your refund policy? ",
-    answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+    question: "What technologies does Tekly Studio use?",
+    answer: "We leverage modern technologies like Docker, Kubernetes, AWS, Azure, GCP, Prisma, Node.js, React, Next.js, and advanced AI frameworks for machine learning and NLP.",
   },
   {
-    question: "Do you offer technical support? ",
-    answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+    question: "Do you offer deployment and DevOps support?",
+    answer: "Yes, we provide full DevOps support including CI/CD pipelines, infrastructure automation, performance optimization, and cloud management for AWS, Azure, and GCP.",
+  },
+  {
+    question: "Can Tekly Studio build mobile applications?",
+    answer: "Absolutely. We offer development for Android, iOS, and web-based mobile applications to ensure your product reaches users across all platforms.",
+  },
+  {
+    question: "How can I get started with Tekly Studio?",
+    answer: "Simply fill out the contact form on our website or reach out via email. Our team will promptly schedule a consultation to understand your project requirements."
   },
 ];

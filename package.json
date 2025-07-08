@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "description": "Nextly Landing Page Template",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "export NODE_OPTIONS=--legacy-openssl-provider && next build",
-    "start": "next start"
-  },
+"scripts": {
+  "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev",
+  "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
+  "start": "next start"
+},
   "repository": {
     "type": "git",
     "url": "https://gituhb.com/web3templates/nextly-template"
@@ -27,7 +27,6 @@
     "@headlessui/react": "^1.2.0",
     "@heroicons/react": "^1.0.1",
     "@tailwindcss/aspect-ratio": "^0.2.1",
-    "framer-motion": "^12.23.0",
     "next": "^11.0.1",
     "next-themes": "^0.0.14",
     "react": "^17.0.1",

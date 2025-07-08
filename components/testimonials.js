@@ -1,55 +1,44 @@
 import Image from "next/image";
 import React from "react";
 import Container from "./container";
-
 import userOneImg from "../public/img/user1.jpg";
 import userTwoImg from "../public/img/user2.jpg";
 import userThreeImg from "../public/img/user3.jpg";
 
+const testimonials = [
+  {
+    name: "Alex Johnson",
+    title: "CEO, ExampleCorp",
+    img: userOneImg,
+    quote: "Tekly Studio transformed our digital presence and helped us grow fast."
+  },
+  {
+    name: "Maria Lopez",
+    title: "Product Manager, StartupX",
+    img: userTwoImg,
+    quote: "The team was responsive, innovative, and exceeded our expectations."
+  },
+  {
+    name: "David Kim",
+    title: "Startup Founder",
+    img: userThreeImg,
+    quote: "Their design and development work was top-notch. Highly recommend."
+  },
+];
+
 export default function Testimonials() {
   return (
     <section id="testimonials">
-      <Container>
-        <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
-          <div className="lg:col-span-2 xl:col-auto">
-            <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-              <p className="text-2xl leading-normal ">
-                Tekly Studio transformed our digital presence and helped us grow fast.
-              </p>
-
-              <Avatar
-                image={userOneImg}
-                name="Sarah Steiner"
-                title="VP Sales at Google"
-              />
+      <Container className="py-16">
+        <h3 className="text-2xl sm:text-3xl font-bold text-center mb-12 text-cyan-400 animate-fadeInUp">What Our Clients Say</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {testimonials.map((t, i) => (
+            <div key={i} className="bg-gray-800 p-6 rounded-lg hover:scale-105 transition-transform duration-300 text-center">
+              <img src={t.img.src} alt={t.name} className="rounded-full w-16 h-16 mb-4 mx-auto" />
+              <p className="text-gray-300 mb-4">&quot;{t.quote}&quot;</p>
+              <h4 className="text-cyan-400 font-semibold">— {t.name}, {t.title}</h4>
             </div>
-          </div>
-          <div className="">
-            <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-              <p className="text-2xl leading-normal ">
-                The team was responsive, innovative, and exceeded our expectations.
-              </p>
-
-              <Avatar
-                image={userTwoImg}
-                name="Dylan Ambrose"
-                title="Lead marketer at Netflix"
-              />
-            </div>
-          </div>
-          <div className="">
-            <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-              <p className="text-2xl leading-normal ">
-                Their design and development work was top-notch. Highly recommend.
-              </p>
-
-              <Avatar
-                image={userThreeImg}
-                name="Gabrielle Winn"
-                title="Co-founder of Acme Inc"
-              />
-            </div>
-          </div>
+          ))}
         </div>
       </Container>
     </section>

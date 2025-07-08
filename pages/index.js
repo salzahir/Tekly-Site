@@ -9,7 +9,7 @@ import Benefits from "../components/benefits";
 import Footer from "../components/footer";
 import Testimonials from "../components/testimonials";
 import Faq from "../components/faq";
-import PopupWidget from "../components/popupWidget";
+import Services from "../components/services";
 
 //import dynamic from "next/dynamic";
 
@@ -45,6 +45,12 @@ export default function Home() {
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
       <SectionTitle
+        pretitle="Tekly Studio Services"
+        title="Our Services">
+        Tekly Studio delivers tailored digital solutions, robust DevOps, and cutting-edge AI systems to help your business scale, innovate, and succeed.
+      </SectionTitle>
+      <Services />
+      <SectionTitle
         pretitle="Explore Our Work"
         title="Discover Our Creative Projects">
         This section showcases the innovative solutions we've delivered for our clients. Each project is crafted with precision and purpose to drive results and elevate digital experiences.
@@ -63,7 +69,6 @@ export default function Home() {
       </SectionTitle>
       <Faq />
       <Footer />
-      <PopupWidget />
     </>
   );
 }

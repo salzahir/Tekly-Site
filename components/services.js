@@ -59,9 +59,6 @@ export default function Services() {
   return (
     <section id="services" className="bg-gray-800 text-white py-20">
       <div className="max-w-6xl mx-auto px-6">
-        <h3 className="text-2xl sm:text-3xl font-bold text-center mb-12 text-cyan-400 animate-fadeInUp">
-          Our Services
-        </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           {services.map((service, idx) => (
             <div

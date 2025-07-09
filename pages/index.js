@@ -11,6 +11,7 @@ import Testimonials from "../components/testimonials";
 import Faq from "../components/faq";
 import Services from "../components/services";
 import PopupWidget from "../components/popupWidget";
+import Timeline from "../components/timeline";
 
 //import dynamic from "next/dynamic";
 
@@ -45,6 +46,7 @@ export default function Home() {
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
+      <Timeline />
       <SectionTitle
         pretitle="Tekly Studio Services"
         title="Our Services">

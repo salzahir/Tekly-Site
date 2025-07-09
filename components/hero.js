@@ -4,14 +4,14 @@ import heroImg from "../public/img/hero.png";
 
 export default function Hero() {
   return (
-    <section id="hero">
+    <section id="hero" className="bg-gray-900 text-white">
       <Container className="flex flex-wrap ">
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
-            <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
+            <h1 className="text-4xl font-bold leading-snug tracking-tight text-white lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight">
               Creative Digital Solutions
             </h1>
-            <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
+            <p className="py-5 text-xl leading-normal text-gray-300 lg:text-xl xl:text-2xl">
               We build innovative digital experiences that drive results
             </p>
 
@@ -40,25 +40,25 @@ export default function Hero() {
       </Container>
       <Container>
         <div className="flex flex-col justify-center">
-          <div className="text-xl text-center text-gray-700 dark:text-white">
+          <div className="text-xl text-center text-white">
             Trusted by <span className="text-indigo-600">2000+</span> customers
             worldwide
           </div>
 
           <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around">
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
+            <div className="pt-2 text-gray-400">
               <AmazonLogo />
             </div>
-            <div className="text-gray-400 dark:text-gray-400">
+            <div className="text-gray-400">
               <VerizonLogo />
             </div>
-            <div className="text-gray-400 dark:text-gray-400">
+            <div className="text-gray-400">
               <MicrosoftLogo />
             </div>
-            <div className="pt-1 text-gray-400 dark:text-gray-400">
+            <div className="pt-1 text-gray-400">
               <NetflixLogo />
             </div>
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
+            <div className="pt-2 text-gray-400">
               <SonyLogo />
             </div>
           </div>

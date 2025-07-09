@@ -28,7 +28,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials">
+    <section id="testimonials" className="bg-gray-900 text-white py-20">
       <Container className="py-16">
         <h3 className="text-2xl sm:text-3xl font-bold text-center mb-12 text-cyan-400 animate-fadeInUp">What Our Clients Say</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -3,7 +3,7 @@ import Container from "./container";
 
 export default function Portfolio() {
   return (
-    <section id="portfolio">
+    <section id="portfolio" className="bg-gray-900 text-white py-20">
       <Container>
         <h3 className="text-2xl sm:text-3xl font-bold text-center mb-12 text-cyan-400 animate-fadeInUp">
           Our Portfolio

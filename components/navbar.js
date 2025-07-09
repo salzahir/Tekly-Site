@@ -1,5 +1,4 @@
 import Link from "next/link";
-import ThemeChanger from "./DarkSwitch";
 import { Disclosure } from "@headlessui/react";
 
 export default function Navbar() {
@@ -13,7 +12,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="w-full">
+    <div className="w-full bg-gray-900 text-white">
       <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
         {/* Logo  */}
         <Disclosure>
@@ -21,14 +20,14 @@ export default function Navbar() {
             <>
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
                 <Link href="/">
-                  <a className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
+                  <a className="flex items-center space-x-2 text-2xl font-medium text-cyan-400">
                     <span>Tekly</span>
                   </a>
                 </Link>
 
                 <Disclosure.Button
                   aria-label="Toggle Menu"
-                  className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700">
+                  className="px-2 py-1 ml-auto text-gray-300 rounded-md lg:hidden hover:text-cyan-400 focus:text-cyan-400 focus:bg-gray-800 focus:outline-none">
                   <svg
                     className="w-6 h-6 fill-current"
                     xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +52,7 @@ export default function Navbar() {
                   <>
                     {navigation.map((item, index) => (
                       <Link key={index} href={item.href}>
-                        <a className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">
+                        <a className="w-full px-4 py-2 -ml-4 text-gray-300 rounded-md hover:text-cyan-400 focus:text-cyan-400 focus:bg-gray-800 focus:outline-none">
                           {item.name}
                         </a>
                       </Link>
@@ -76,7 +75,7 @@ export default function Navbar() {
             {navigation.map((item, index) => (
               <li className="mr-3 nav__item" key={index}>
                 <Link href={item.href}>
-                  <a className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none">
+                  <a className="inline-block px-4 py-2 text-lg font-normal text-gray-300 no-underline rounded-md hover:text-cyan-400 focus:text-cyan-400 focus:bg-gray-800 focus:outline-none">
                     {item.name}
                   </a>
                 </Link>
@@ -91,8 +90,6 @@ export default function Navbar() {
               Get Started
             </a>
           </Link>
-
-          <ThemeChanger />
         </div>
       </nav>
     </div>

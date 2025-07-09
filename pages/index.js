@@ -10,6 +10,7 @@ import Footer from "../components/footer";
 import Testimonials from "../components/testimonials";
 import Faq from "../components/faq";
 import Services from "../components/services";
+import PopupWidget from "../components/popupWidget";
 
 //import dynamic from "next/dynamic";
 
@@ -69,6 +70,7 @@ export default function Home() {
       </SectionTitle>
       <Faq />
       <Footer />
+      <PopupWidget />
     </>
   );
 }

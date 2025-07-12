@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import Container from "./container";
 
@@ -12,13 +11,11 @@ export default function Benefits(props) {
           className={`flex items-center justify-center w-full lg:w-1/2 ${props.imgPos === "right" ? "lg:order-1" : ""
             }`}>
           <div>
-            <Image
-              src={data.image}
+            <img
+              src={data.image.src}
               width="521"
               height="482"
               alt="Benefits"
-              layout="intrinsic"
-              placeholder="blur"
             />
           </div>
         </div>

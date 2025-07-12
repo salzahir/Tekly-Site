@@ -7,13 +7,10 @@ import {
   SunIcon,
 } from "@heroicons/react/outline";
 
-import benefitOneImg from "../public/img/benefit-one.png";
-import benefitTwoImg from "../public/img/benefit-two.png";
-
 const benefitOne = {
   title: "Why Choose Tekly Studio",
   desc: "Tekly Studio delivers cutting-edge solutions that elevate businesses through robust technology, seamless user experiences, and scalable architectures.",
-  image: benefitOneImg,
+  image: { src: "/img/benefit-one.png" },
   bullets: [
     {
       title: "Comprehensive DevOps Expertise",
@@ -36,7 +33,7 @@ const benefitOne = {
 const benefitTwo = {
   title: "Tekly Studio Advantages",
   desc: "We combine mobile responsiveness, modern frameworks, and user-centric design to deliver high-performance digital products.",
-  image: benefitTwoImg,
+  image: { src: "/img/benefit-two.png" },
   bullets: [
     {
       title: "Mobile-First Design",

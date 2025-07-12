@@ -1,27 +1,23 @@
-import Image from "next/image";
 import React from "react";
 import Container from "./container";
-import userOneImg from "../public/img/user1.jpg";
-import userTwoImg from "../public/img/user2.jpg";
-import userThreeImg from "../public/img/user3.jpg";
 
 const testimonials = [
   {
     name: "Alex Johnson",
     title: "CEO, ExampleCorp",
-    img: userOneImg,
+    img: { src: "/img/user1.jpg" },
     quote: "Tekly Studio transformed our digital presence and helped us grow fast."
   },
   {
     name: "Maria Lopez",
     title: "Product Manager, StartupX",
-    img: userTwoImg,
+    img: { src: "/img/user2.jpg" },
     quote: "The team was responsive, innovative, and exceeded our expectations."
   },
   {
     name: "David Kim",
     title: "Startup Founder",
-    img: userThreeImg,
+    img: { src: "/img/user3.jpg" },
     quote: "Their design and development work was top-notch. Highly recommend."
   },
 ];
@@ -49,13 +45,11 @@ function Avatar(props) {
   return (
     <div className="flex items-center mt-8 space-x-3">
       <div className="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
-        <Image
-          src={props.image}
+        <img
+          src={props.image.src}
           width="40"
           height="40"
           alt="Avatar"
-          layout="responsive"
-          placeholder="blur"
         />
       </div>
       <div>
